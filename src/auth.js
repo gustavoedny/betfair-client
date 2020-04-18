@@ -10,7 +10,7 @@ class Auth {
     this.config = {...defaultConfig, ...config}
   }
 
-  static build(config = {}) {
+  static factory(config = {}) {
     return new Auth(config)
   }
 

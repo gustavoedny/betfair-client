@@ -1,5 +1,5 @@
 {
-  "name": "betfair-client",
+  "name": "@gustavoedny/betfair-client",
   "version": "1.0.0",
   "description": "A simple Betfair REST API wrapper",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.19.0"
   }

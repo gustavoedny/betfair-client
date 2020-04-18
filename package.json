@@ -3,6 +3,10 @@
   "version": "1.0.1",
   "description": "A simple Betfair REST API wrapper",
   "main": "index.js",
+  "repository": {
+    "url": "https://github.com/GustavoEdny/betfair-client.git",
+    "type": "git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -40,7 +40,7 @@ class Betting extends Api {
       granularity
     }
 
-    return this.call(en, payload)
+    return this.call(endpoint, payload)
   }
 
   listEvents (filter, locale = 'en') {

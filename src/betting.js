@@ -6,6 +6,10 @@ class Betting extends Api {
     super(appKey, sessionToken)
   }
 
+  static factory(sessionToken, appKey) {
+    return new Betting(sessionToken, appKey)
+  }
+
   listEventTypes (filter, locale = 'en') {
     const endpoint = endpoints('listEventTypes')
 

@@ -1,0 +1,5 @@
+# Ignore depedencies folder
+node_modules
+
+# Ignore IntelliJ IDEs config files
+.idea

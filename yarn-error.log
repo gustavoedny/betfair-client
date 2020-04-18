@@ -1,0 +1,42 @@
+Arguments: 
+  /home/gustavoedny/.nvm/versions/node/v12.10.0/bin/node /usr/share/yarn/bin/yarn.js add axios
+
+PATH: 
+  /home/gustavoedny/.rbenv/shims:/home/gustavoedny/.nvm/versions/node/v12.10.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/gustavoedny/.rvm/bin:/home/gustavoedny/.rvm/bin
+
+Yarn version: 
+  1.19.1
+
+Node version: 
+  12.10.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  SyntaxError: /home/gustavoedny/PhpstormProjects/betfair-client/package.json: Unexpected token : in JSON at position 118
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:304:30)
+      at /usr/share/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "betfair-client",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts":
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,5 +1,6 @@
 const axios = require('axios')
 const endpoints = require('./endpoints')
+const queryString = require('querystring')
 
 const defaultConfig = {
   locale: 'default'
@@ -16,10 +17,10 @@ class Auth {
 
   login (username, password, appKey) {
     const endpoint = endpoints('login', this.config.locale)
-    const form = {
+    const form = queryString.stringify({
       username,
       password
-    }
+    })
     const headers = {
       'X-Application': appKey,
       'Accept': 'application/json',

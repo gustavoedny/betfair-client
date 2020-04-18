@@ -31,11 +31,53 @@ const BETTING_BASE_URL = 'https://api.betfair.com/exchange/betting/rest/v1.0/'
 
 const BETTING = {
   listEventTypes: {
-    default: BETTING_BASE_URL + 'listEventTypes'
+    default: BETTING_BASE_URL + 'listEventTypes/'
   },
   listCompetitions: {
-    default: BETTING_BASE_URL + 'listCompetitions'
-  }
+    default: BETTING_BASE_URL + 'listCompetitions/'
+  },
+  listTimeRanges: {
+    default: BETTING_BASE_URL + 'listTimeRanges/'
+  },
+  listEvents: {
+    default: BETTING_BASE_URL + 'listEvents/'
+  },
+  listMarketTypes: {
+    default: BETTING_BASE_URL + 'listMarketTypes/'
+  },
+  listCountries: {
+    default: BETTING_BASE_URL + 'listCountries/'
+  },
+  listVenues: {
+    default: BETTING_BASE_URL + 'listVenues/'
+  },
+  listMarketCatalogue: {
+    default: BETTING_BASE_URL + 'listMarketCatalogue/'
+  },
+  listMarketBook: {
+    default: BETTING_BASE_URL + 'listMarketBook/'
+  },
+  listRunnerBook: {
+    default: BETTING_BASE_URL + 'listRunnerBook/'
+  },
+  listMarketProfitAndLoss: {
+    default: BETTING_BASE_URL + 'listMarketProfitAndLoss/'
+  },
+  listCurrentOrders: {
+    default: BETTING_BASE_URL + 'listCurrentOrders/'
+  },
+  listClearedOrders: {
+    default: BETTING_BASE_URL + 'listClearedOrders/'
+  },
+  placeOrders: {
+    default: BETTING_BASE_URL + 'placeOrders/'
+  },
+  cancelOrders: {
+    default: BETTING_BASE_URL + 'cancelOrders/'
+  },
+  replaceOrders: {
+    default: BETTING_BASE_URL + 'replaceOrders/'
+  },
 }
 
 const ENDPOINTS = {

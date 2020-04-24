@@ -1,4 +1,4 @@
-const axios = require('axios')
+const client = require('./client')
 const endpoints = require('./endpoints')
 const queryString = require('querystring')
 
@@ -7,8 +7,9 @@ const defaultConfig = {
 }
 
 class Auth {
-  constructor (config = {}) {
+  constructor (config = {}, adapter = 'node') {
     this.config = {...defaultConfig, ...config}
+    this.client = client(adapter)
   }
 
   static factory(config = {}) {
@@ -27,7 +28,7 @@ class Auth {
       'Content-Type': 'application/x-www-form-urlencoded'
     }
 
-    return axios.post(endpoint, form, { headers })
+    return this.client.post(endpoint, form, { headers })
   }
 
   keepAlive (sessionToken, appKey = null) {
@@ -41,7 +42,7 @@ class Auth {
       headers['X-Application'] = appKey
     }
 
-    return axios.post(endpoint, {}, { headers })
+    return this.client.post(endpoint, {}, { headers })
   }
 
   logout (sessionToken, appKey = null) {
@@ -55,7 +56,7 @@ class Auth {
       headers['X-Application'] = appKey
     }
 
-    return axios.post(endpoint, {}, { headers })
+    return this.client.post(endpoint, {}, { headers })
   }
 }
 

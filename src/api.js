@@ -1,9 +1,10 @@
-const axios = require('axios')
+const client = require('./client')
 
 class Api {
-  constructor (appKey, sessionToken = null) {
+  constructor (appKey, sessionToken = null, adapter = 'node') {
     this.appKey = appKey
     this.sessionToken = sessionToken
+    this.client = client(adapter)
   }
 
   setSessionToken (token) {
@@ -23,7 +24,7 @@ class Api {
       requestHeaders['X-Authentication'] = this.sessionToken
     }
 
-    return axios.post(endpoint, payload, { headers: requestHeaders })
+    return this.client.post(endpoint, payload, { headers: requestHeaders })
   }
 }
 

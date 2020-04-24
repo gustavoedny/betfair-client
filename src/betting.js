@@ -2,8 +2,8 @@ const endpoints = require('./endpoints')
 const Api = require('./api')
 
 class Betting extends Api {
-  constructor (sessionToken, appKey) {
-    super(appKey, sessionToken)
+  constructor (sessionToken, appKey, adapter = 'node') {
+    super(appKey, sessionToken, adapter)
   }
 
   static factory(sessionToken, appKey) {
